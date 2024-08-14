@@ -6,17 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/oh_ya/this_is_playroom_mode1 try g 1.unity
-    guid: e6ca9eb5ead0808489a5eece681e0f12
-  - enabled: 0
-    path: Assets/oh_ya/this_is_warehouse.unity
-    guid: b2e141620bf45d64fadb0f85ba6d0788
-  - enabled: 0
-    path: Assets/oh_ya/this_is_playroom_choose.unity
-    guid: 4d337a2a5695a26448158b144e0cd031
-  - enabled: 1
     path: Assets/oh_ya/livingroom.unity
     guid: 2a7d34d0d3203f542986caf1f929848a
+  - enabled: 0
+    path: Assets/oh_ya/into_playroom.unity
+    guid: 21eeb4f52adf7b34fb36040513461009
+  - enabled: 0
+    path: Assets/oh_ya/playroom_choose.unity
+    guid: 4d337a2a5695a26448158b144e0cd031
+  - enabled: 0
+    path: Assets/oh_ya/playroom_mode1.unity
+    guid: e6ca9eb5ead0808489a5eece681e0f12
+  - enabled: 1
+    path: Assets/oh_ya/warehouse.unity
+    guid: b2e141620bf45d64fadb0f85ba6d0788
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: c57f3a6d460d33245b1fd33506134b22,
       type: 2}
