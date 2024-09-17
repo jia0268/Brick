@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Collections;
 
 [System.Serializable]
 public class TargetGroupOB
@@ -14,6 +15,7 @@ public class ObjectTargetOB: MonoBehaviour
     public List<TargetGroupOB> targetGroups; // 用來放目標位置們
     private int currentIndex = 0;
     public float Threshold = 0.0001f; // 敏感度
+    public GameObject celebreate; // 結尾慶祝
 
     // 用來定義每一步可以放的物件們
     private Dictionary<int, List<int>> Objects = new Dictionary<int, List<int>>()
@@ -102,6 +104,10 @@ public class ObjectTargetOB: MonoBehaviour
                     }
                 }
             }
+        }else
+        {
+            // 所有積木拼完，顯示慶祝
+            StartCoroutine(Delay(1f)); // 延遲1秒顯示
         }
     }
 
@@ -150,6 +156,16 @@ public class ObjectTargetOB: MonoBehaviour
             {
                 target.gameObject.SetActive(true);
             }
+        }
+    }
+    IEnumerator Delay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+
+        // 顯示結尾慶祝
+        if (celebreate != null)
+        {
+            celebreate.SetActive(true);
         }
     }
 }
